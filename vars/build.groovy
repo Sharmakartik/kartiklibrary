@@ -5,5 +5,6 @@ import scr.Shell.*
 def call(){
     def h= new Shell(this)
     h.mvn 'clean'
+    echo "build from script"
     
  }
