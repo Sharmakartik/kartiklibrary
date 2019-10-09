@@ -5,6 +5,6 @@ class Shell implements Serializable {
   Shell(steps) {this.steps = steps}
 
     def mvn(args) {
-    steps.sh "${steps.tool 'maven'}/bin/mvn -o ${args}"
+    steps.sh "${steps.tool 'maven'}\tools\hudson.tasks.Maven_MavenInstallation\maven\bin -o ${args}"
   }
 }
