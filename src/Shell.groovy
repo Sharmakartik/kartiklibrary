@@ -5,7 +5,7 @@ class Shell implements Serializable {
   Shell(steps) {this.steps = steps}
 
     def mvn(args) {
-      def mvnHome = tool 'maven'
+      def mvnHome = tool'maven'
       steps.sh "${mvnHome}/bin/mvn -o ${args}"
   }
 }
