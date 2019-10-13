@@ -4,7 +4,7 @@ import scr.Shell.*
 
 def call(){
     def h= new Shell(this)
-   // h.mvn'clean'
+    h.mvn'clean'
     bat '''
         mvn package
      '''
