@@ -5,7 +5,7 @@ import scr.Shell.*
 def call(){
     def h= new Shell(this)
    // h.mvn'clean'
-    sh '''
+    bat '''
         mvn package
      '''
     echo "build from script"
