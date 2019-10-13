@@ -2,11 +2,11 @@
 
 import scr.Shell.*
 
-def call(){
+def call(message){
     def h= new Shell(this)
-    h.mvn'clean'
+    //h.mvn'clean'
     bat '''
-        mvn package
+        mvn $(message)
      '''
     echo "build from script"
     
