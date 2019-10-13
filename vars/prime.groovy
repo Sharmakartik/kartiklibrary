@@ -3,7 +3,7 @@ import org.apache.commons.math3.primes.Primes
 
 def parallelize(int count) {
   if (!Primes.isPrime(${count})) {
-    error "${count} was not prime"
+    echo "${count} was not prime"
   }
   
 }
